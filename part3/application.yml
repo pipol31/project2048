@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://hub.docker.com/r/fengfeifei/2048:v4
+    repoURL: https://github.com/pipol31/project2048
     path: part3/game2048
   destination:
     server: "https://kubernetes.default.svc"
