@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: public.ecr.aws/kishorj/docker-2048:latest
+    repoURL: https://hub.docker.com/r/fengfeifei/2048:v4
     path: part3/game2048
   destination:
     server: "https://kubernetes.default.svc"
