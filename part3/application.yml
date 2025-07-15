@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://gitlab.com/Gribhb/project2048.git
+    repoURL: public.ecr.aws/kishorj/docker-2048:latest
     path: part3/game2048
   destination:
     server: "https://kubernetes.default.svc"
