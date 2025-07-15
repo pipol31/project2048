@@ -62,14 +62,14 @@ resources: {}
   #   cpu: 100m
   #   memory: 128Mi
 
-livenessProbe:
-  httpGet:
-    path: /
-    port: 80
-readinessProbe:
-  httpGet:
-    path: /
-    port: 80
+  #livenessProbe:
+  #httpGet:
+  #  path: /
+  #  port: 80
+  #readinessProbe:
+  #httpGet:
+  #  path: /
+  #  port: 80
 
 # Additional volumes on the output Deployment definition.
 volumes:
