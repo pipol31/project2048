@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "game2048.name" . }}-test-connection"
+  namespace: "{{ include "game2048.name" . }}"
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "game2048.name" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never
