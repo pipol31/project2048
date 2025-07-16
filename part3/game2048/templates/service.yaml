@@ -9,7 +9,7 @@ spec:
 {{- if .Values.ingress.enabled }}
   type: ClusterIP
 {{- else }}
-  type: NodePort
+  type: ClusterIP
 {{- end}}
   selector:
     {{- include "game2048.selectorLabels" . | nindent 4 }}
