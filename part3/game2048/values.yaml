@@ -77,7 +77,7 @@ volumes:
  - name: game2048
    hostPath:
      # directory location on host
-     path: /tmp/data/game2048
+   path: /tmp/data/game2048
 
 # Additional volumeMounts on the output Deployment definition.
 volumeMounts: 
