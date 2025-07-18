@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   namespace: {{ include "game2048.name" . }}
-  name: {{ include "game2048.name" . }}
+  name: {{ .Values.service.name }}
   labels:
     {{- include "game2048.labels" . | nindent 4 }}
 spec:
