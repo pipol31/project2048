@@ -71,18 +71,17 @@ resources: {}
   #httpGet:
   #  path: /
   #  port: 80
-
 # Additional volumes on the output Deployment definition.
 volumes:
- - name: game2048
-   hostPath:
-     # directory location on host
-     path: /tmp/data/game2048
+- name: game2048
+  hostPath:
+    # directory location on host
+    path: /tmp/data/game2048
 
 # Additional volumeMounts on the output Deployment definition.
 volumeMounts: 
- - name: game2048
-   mountPath: "/usr/share/nginx/html"
+- name: game2048
+  mountPath: "/usr/share/nginx/html"
 #   readOnly: true
 
 nodeSelector: 
