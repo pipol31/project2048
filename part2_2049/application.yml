@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/pipol31/project2048
-    path: part2_game2049/game2049
+    path: part2_2049/game2049
   destination:
     server: "https://kubernetes.default.svc"
     namespace: game2049
