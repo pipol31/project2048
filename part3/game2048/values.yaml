@@ -89,8 +89,8 @@ volumeMounts:
     mountPath: "/usr/share/nginx/html"
 #   readOnly: true
 
-#nodeSelector:
-#  kubernetes.io/arch: amd64
+nodeSelector:
+  kubernetes.io/arch: amd64
 
 tolerations: []
 
