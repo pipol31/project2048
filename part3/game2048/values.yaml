@@ -2,7 +2,7 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-replicaCount: 2 
+replicaCount: 1
 
 autoscaling:
   enabled: false
@@ -14,6 +14,7 @@ autoscaling:
 image:
   #repository: public.ecr.aws/l6m2t8p7/docker-2048
   repository: public.ecr.aws/kishorj/docker-2048
+  #repository: alexwhen/docker-2048
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
@@ -38,11 +39,11 @@ service:
   port: 80
 
 ingress:
-  enabled: false
+  enabled: true
   className: ""
   annotations: {}
   hosts:
-    - host: game2048.false
+    - host: game2048.local
       paths:
         - path: /
           pathType: Prefix
@@ -73,19 +74,19 @@ resources: {}
   #  port: 80
 # Additional volumes on the output Deployment definition.
 volumes:
-- name: game2048
-  hostPath:
-    # directory location on host
-    path: /tmp/data/game2048
+  - name: game2048
+    hostPath:
+      # directory location on host
+      path: /tmp/data/game2048
 
 # Additional volumeMounts on the output Deployment definition.
-volumeMounts: 
-- name: game2048
-  mountPath: "/usr/share/nginx/html"
+volumeMounts:
+  - name: game2048
+    mountPath: "/usr/share/nginx/html"
 #   readOnly: true
 
-nodeSelector: 
-  kubernetes.io/arch: amd64
+#nodeSelector:
+#  kubernetes.io/arch: amd64
 
 tolerations: []
 
