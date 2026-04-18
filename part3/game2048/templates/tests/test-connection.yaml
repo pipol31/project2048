@@ -8,7 +8,5 @@ spec:
     - name: wget
       image: busybox
       command: ['wget']
-      args:
-        - '--header=Host: game2048.local'
-        - ['{{ .Values.service.name }}:{{ .Values.service.port }}']
+      args: ['{{ .Values.service.name }}:{{ .Values.service.port }}']
   restartPolicy: Never
