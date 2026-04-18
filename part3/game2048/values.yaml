@@ -13,9 +13,10 @@ autoscaling:
 
 image:
   #repository: public.ecr.aws/l6m2t8p7/docker-2048
-  repository: public.ecr.aws/kishorj/docker-2048
+  #repository: public.ecr.aws/kishorj/docker-2048
   #repository: alexwhen/docker-2048
-  repository: ghcr.io/pmizio/2048
+  #repository: ghcr.io/pmizio/2048
+  repository: vimagick/2048
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
