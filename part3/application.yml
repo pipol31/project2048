@@ -6,8 +6,8 @@ metadata:
 spec:
   project: default
   source:
-    #repoURL: https://github.com/pipol31/project2048
-    repoURL: https://gitlab.com/Gribhb/project2048.git
+    repoURL: https://github.com/pipol31/project2048.git
+    #repoURL: https://gitlab.com/Gribhb/project2048.git
     path: part3/game2048
   destination:
     server: "https://kubernetes.default.svc"
