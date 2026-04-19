@@ -13,10 +13,10 @@ autoscaling:
 
 image:
   #repository: public.ecr.aws/l6m2t8p7/docker-2048
-  registry: ghcr.io
+  #registry: ghcr.io
   #repository: kishorj/docker-2048
   ##registry:
-  repository: gabrielecirulli/2048
+  repository: jgreat/2048
   #repository: ghcr.io/pmizio/2048
   #repository: vimagick/2048
   pullPolicy: IfNotPresent
