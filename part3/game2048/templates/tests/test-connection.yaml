@@ -8,5 +8,5 @@ spec:
     - name: wget
       image: busybox
       command: ['wget']
-      args: ['{{ include "game2048.name" . }}:{{ .Values.service.port }}']
+      args: ['{{ .Values.service.name }}:{{ .Values.service.port }}']
   restartPolicy: Never
