@@ -16,7 +16,7 @@ image:
   #registry: ghcr.io
   #repository: kishorj/docker-2048
   ##registry:
-  repository: jgreat/2048
+  repository: public.ecr.aws/kishorj/docker-2048
   #repository: ghcr.io/pmizio/2048
   #repository: vimagick/2048
   pullPolicy: IfNotPresent
